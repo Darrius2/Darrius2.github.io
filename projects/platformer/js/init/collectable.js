@@ -1,0 +1,66 @@
+(function (window) {
+    'use strict';
+    window.opspark = window.opspark || {};
+    window.opspark.collectable = window.opspark.collectable || {};
+    let collectable = window.opspark.collectable;
+    
+    let type = {
+        db: {assetKey: 'db', points: 10},
+        max: {assetKey: 'max', points: 20},
+        steve: {assetKey: 'steve', points: 30},
+        grace: {assetKey: 'grace', points: 40},
+        kennedi: {assetKey: 'kennedi', points: 50}
+    };
+    
+    /**
+     * init: Initialize all collectables.
+     * 
+     * GOAL: Add as many collectables as necessary to make your level challenging.
+     * 
+     * Use the collectable.create() method to create collectables for the level.
+     * See the type Object, above, for the types of collectables and their point values.
+     * 
+     * collectable.create() takes these arguments:
+     *      
+     *      collectable.create(type, x, y, gravity, bounce);
+     * 
+     *      type: The type of the collectable, use the type Object above.
+     *      x: The x coordineate for the collectable.
+     *      y: The y coordineate for the collectable.
+     *      gravity: OPTIONAL The gravitational pull on the collectable.
+     *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
+     */ 
+    collectable.init = function (game) {
+        ////////////////////////////////////////////////////////////////////////
+        // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
+        
+        // example: 
+        collectable.create(type.db, 450, 60, 7, 0.6);
+         collectable.create(type.db, 490, 60, 7, 0.6);
+        collectable.create(type.max, 700, 100, 6, 0.5);
+        collectable.create(type.max, 800,100, 6, 0.5);
+        collectable.create(type.steve, 0, 170, 6, 0.7);
+         collectable.create(type.steve, 0, 178, 5, 0.6);
+        collectable.create(type.steve, 200, 170, 6, 0.7);
+        collectable.create(type.steve, 100, 160, 5, 0.6);
+        collectable.create(type.grace, 850, 500, 100, 0 )
+        collectable.create(type.grace, 800, 500, 100,0)
+        collectable.create(type.grace, 780, 500, 100,0 )
+          collectable.create(type.kennedi, 79, 500, 5, 0.6);
+           collectable.create(type.kennedi, 88, 500, 5, 0.6);
+         collectable.create(type.kennedi, 100, 500, 5, 0.6);
+         collectable.create(type.kennedi, 95, 500, 5, 0.6);
+         collectable.create(type.kennedi, 90, 500, 5, 0.6);
+         collectable.create(type.kennedi, 80, 500, 5, 0.6);
+        collectable.create(type.kennedi, 75, 500, 5, 0.6);
+        collectable.create(type.kennedi, 70, 500, 5, 0.6);
+        collectable.create(type.kennedi, 60, 500, 5, 0.6);
+        collectable.create(type.kennedi, 50, 500, 5, 0.6);
+        collectable.create(type.kennedi, 40, 500, 5, 0.6);
+        collectable.create(type.kennedi, 30, 500, 5, 0.6);
+        collectable.create(type.kennedi, 20, 500, 5, 0.6);
+        collectable.create(type.kennedi, 10, 500, 5, 0.6);
+        // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////
+    };
+})(window);
