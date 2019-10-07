@@ -21,8 +21,13 @@
         
         // example: 
         cannon.create.onTop(400,200)
+         cannon.create.onTop(410,200)
         cannon.create.onBottom(300,200)
-        cannon.create.onLeft(300,200)
+        cannon.create.onBottom(310,200)
+        cannon.create.onLeft(200,200)
+        cannon.create.onLeft(210,200)
+        cannon.create.onRight(400,200)
+        cannon.create.onRight(410,200)
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
