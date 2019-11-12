@@ -38,16 +38,31 @@ var background = function (window) {
             // you should modify this to suit your game
             var backgroundFill = draw.rect(canvasWidth,groundY, 'black');
             background.addChild(backgroundFill);
-            var shape = draw.circle(50, 'yellow', 'yellow');
+            var shape = draw.circle(50, 'yellow', 'orange', 10);
             background.addChild(shape);
             // TODO: 3 - Add a moon and starfield
-            
-            
+           var rect;
+for(var i=0;i<10;i++) {
+    rect = draw.rect(10, 10, 'orange','orange', 10);
+    rect.x = canvasWidth*Math.random();
+    rect.y = groundY -150
+    background.addChild(rect);
+}         
+var moon = draw.bitmap('img/index.jpg');
+moon.x = 700;
+moon.y = 25;
+moon.scaleX = 1.0;
+moon.scaleY = 1.0;
+background.addChild(moon);
             // TODO: 5 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             
             
             // TODO 4: Part 1 - Add a tree
-            
+            var tree;
+            tree = draw.bitmap('img/');
+tree.x = 0;
+tree.y = 0;
+background.addChild(tree);
             
         } // end of render function - DO NOT DELETE
         
